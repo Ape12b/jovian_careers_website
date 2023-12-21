@@ -1,0 +1,13 @@
+<div class="container text-center mb-2 mt-2">
+  {% for job in jobs %}
+  <div class="row border-bottom mt-2 mb-2">
+  <div class="col-8 text-start">
+      <h4>Job: {{ job["Name"] }}</h4>
+      <p><b>Location:</b> {{ job["Location"] }}</p>
+    </div>
+  <div class="col mt-2 text-end">
+    <button class="btn btn-secondary">Apply!</button>
+  </div>
+  </div>
+  {% endfor %}
+</div>

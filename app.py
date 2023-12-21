@@ -2,10 +2,28 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 
 app = Flask(__name__)
 
+JOBS = [{
+    'id': 1,
+    "Name": "Data Scientist",
+    "Location": "Bangaluru, India"
+}, {
+    'id': 2,
+    "Name": "Data Analyst",
+    "Location": "Delhi, India"
+}, {
+    'id': 3,
+    "Name": "Data Scientist",
+    "Location": "Remote, India"
+}, {
+    'id': 4,
+    "Name": "Data Scientist",
+    "Location": "NYC, USA"
+}]
+
 
 @app.route('/')
 def hello_world():
-  return render_template('home.html')
+  return render_template('home.html', jobs=JOBS)
 
 
 @app.route('/about')
