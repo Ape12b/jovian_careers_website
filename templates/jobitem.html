@@ -6,7 +6,7 @@
       <p><b>Location:</b> {{ job["Location"] }}</p>
     </div>
   <div class="col mt-2 text-end">
-    <button class="btn btn-secondary">Apply!</button>
+    <a href="mailto:apratim.bajpai@gmail.com?subject=Applying%20for%20a%20job&body=Application%20for%20{{ job['Name'] }}%20job.%20" class="btn btn-secondary">Apply!</a>
   </div>
   </div>
   {% endfor %}

@@ -17,6 +17,7 @@
   
 </head>
 <body>
+  {% include 'nav.html' %}
   <div class="container">
     <h1 class="text-center mt-4 mb-4 display-2">CareerConnect</h1>
     <div class="text-center">
@@ -25,8 +26,17 @@
     <h2 class="text-center mt-2 mb-4 display-5">
         About CareerConnect
     </h2>
-    <p class="lead">Introducing "CareerConnect," your gateway to a world of professional possibilities. Navigating the intricate landscape of career choices has never been easier. Whether you're a seasoned professional seeking new horizons or a recent graduate ready to embark on your professional journey, CareerConnect is your trusted companion.
-    </p>
+    <div class="container text-center">
+      <div class="row align-items-start">
+        <div class="col-md-8 ">
+          <p class="lead">Introducing "CareerConnect," your gateway to a world of professional possibilities. Navigating the intricate landscape of career choices has never been easier. Whether you're a seasoned professional seeking new horizons or a recent graduate ready to embark on your professional journey, CareerConnect is your trusted companion.
+          </p>
+        </div>
+        <div class="d-none d-md-block col-md">
+          <img src="/static/working.jpg" class="img-fluid" alt="working">
+        </div>
+      </div>
+    </div>
 
   <div>
     <h2 class="text-center mt-2 mb-4 display-5">Job openings</h2>
@@ -35,5 +45,6 @@
   <div class="text-center mt-4">
     <button class="btn btn-primary btn-lg">Contact us!</button>
   </div>
+    {% include 'footer.html' %}
 </body>
 </html>

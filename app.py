@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 
 app = Flask(__name__)
 
@@ -29,6 +29,11 @@ def hello_world():
 @app.route('/about')
 def about():
   return render_template('about.html')
+
+
+@app.route('/jobs')
+def jobs():
+  return jsonify(JOBS)
 
 
 if __name__ == "__main__":
